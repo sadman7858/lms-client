@@ -1,0 +1,12 @@
+.pdf-container {
+  width: 100%;
+  height: 900px;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pdfbox {
+  margin-inline: 70px;
+  margin-bottom: 50px;
+}

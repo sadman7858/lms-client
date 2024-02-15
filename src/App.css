@@ -1,0 +1,99 @@
+.dark-theme {
+  --revrecentclr:#9ca3af;
+  --revrecentbg: #293040;
+  --mdlclr:#0096b5;
+  --modalbg: #1d2634;
+  --herocolr: #9ca3af;
+  --herobtn: #1d2634;
+  --navBagColour: #1d2634;
+  --leftsidebg: #263043;
+  --leftsidebgadmn: #9ca3af;
+  --rightcontentBgadmn: #9ca3af;
+  --rightcontentBg: #1d2634;
+  --rightcontentcolour: #ffffff;
+  --contbgcolour: darkolivegreen;
+  --number: #6678a5;
+  --numbicon: green;
+  --herobtnbg: #6678a5;
+  --tcabg: #293040;
+  --fontcolmain: #9ca3af;
+  --listfootcol: #9ca3af;
+  --boxshadownav: 0 6px 7px -3px rgba(0, 0, 0, 0.35);
+  --parthovercolr: rgba(255, 255, 255, 0.2);
+  --stdnthomebg: #111827;
+  --stdnthomeclr: #9ca3af;
+  --feedbackbg: #263043;
+  --feedbackcolour: #9ca3af;
+
+  --borderclr: #9ca3af;
+  --dltstxtclr: #9ca3af;
+  --historybg: #263043;
+  --requestbg: #263043;
+  --requestbgcolour: #9ca3af;
+  --morenav: linear-gradient(90deg, #9ca3af, #263043);
+  --updateprofilebg: #263043;
+  --updateprofilecolour: #9ca3af;
+  --showbooksrcbg: #6678a5;
+  --showbooksrccolour: #9ca3af;
+  --txtcolour: aliceblue;
+  --txtbg: #1d2634;
+  --stdnthomebg: #263043;
+  --stdnthomehoverbg: #464a51;
+  --showbooksrccolou: #9ca3af;
+  --icnclr: white;
+  --footbgcolour: #1e2127;
+  transition: color 0.8s ease-in-out;
+}
+
+.light-theme {
+  --revrecentclr:black;
+  --revrecentbg:white;
+  --mdlclr:black
+  --modalbg: white;
+  --dltstxtclr: black;
+  --borderclr: green;
+  --herocolr: black;
+  --herobtn: white;
+  --herobtnbg: #0096b5;
+  --icnclr: black;
+  --txtcolour: black;
+  --txtbg: white;
+  --tcabg: #ece1e185;
+  --navBagColour: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(255, 255, 255, 0.9) 50%,
+    rgba(255, 255, 255, 0.9) 100%
+  );
+  --leftsidebg: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(230, 230, 230, 1) 100%
+  );
+  --showbooksrccolou: black;
+  --listfootcol: white;
+  --feedbackbg: #f3f4f6;
+  --rightcontentBg: #ffffff;
+  --partbg: rebeccapurple;
+  --boxshadownav: 0 6px 7px -3px rgba(0, 0, 0, 0.35);
+  --parthovercolr: rgba(147, 94, 94, 0.2);
+  --historybg: #f3f4f6;
+  --requestbg: #f3f4f6;
+  --morenav: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(204, 204, 204, 1) 100%
+  );
+  --updateprofilebg: radial-gradient(
+    circle,
+    rgba(255, 251, 253, 1) 0%,
+    rgb(166, 191, 218) 93%
+  );
+  --showbooksrcbg: #f3f4f6;
+  /* --stdnthomebg: rgb(202, 175, 149); */
+  --stdnthomehoverbg: #f3f4f6;
+  --morecolour: black;
+  --footbgcolour: #03151e;
+  --fontcolmain: #df6c5e;
+  transition: color 0.8s ease-in-out;
+}

@@ -1,0 +1,13 @@
+.dropdown-menu.show {
+  background-color: #263043;
+}
+/* .card-header {
+  border-bottom: 1px solid #00008b !important;
+} */
+#image {
+  width: 210px;
+}
+
+#pdf {
+  width: 210px;
+}

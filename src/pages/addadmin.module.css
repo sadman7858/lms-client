@@ -1,0 +1,77 @@
+.content {
+  background-color: #2d343e;
+  width: 500px;
+  padding: 1rem;
+  border-radius: 10px;
+}
+/* show all users css */
+.usersbg {
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+.customTable {
+  max-width: 600px;
+  min-height: 100vh;
+  padding: 10px;
+}
+.customTable thead,
+.customTable tr,
+.customTable th,
+.customTable tbody,
+.customTable tr,
+.customTable td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding-inline: 10px;
+  padding-block: 6px;
+  text-align: center;
+}
+.cursorPointer {
+  cursor: pointer;
+}
+.customTable tbody tr td img {
+  height: 40px;
+  width: 40;
+  border-radius: 50%;
+}
+
+.inp label,
+input {
+  font-size: 1.3rem;
+  border: none;
+  outline: none;
+}
+
+.inp label {
+  color: orange;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.inp input {
+  border-radius: 5px;
+  padding-inline: 10px;
+
+  padding-block: 4px;
+}
+
+.inp {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-block: 10px;
+}
+
+.btn {
+  text-align: center;
+}
+
+.main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  justify-content: center;
+}

@@ -1,0 +1,7 @@
+.txtclr {
+  color: var(--dltstxtclr);
+}
+.borderdlts {
+  border-bottom: 2px solid;
+  border-color: var(--borderclr);
+}

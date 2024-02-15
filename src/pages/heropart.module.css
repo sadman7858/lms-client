@@ -1,0 +1,59 @@
+.main {
+  padding-block: 5rem;
+  /* background-color: aqua; */
+  margin: auto;
+  width: 80%;
+}
+
+.main h1 {
+  font-weight: 900;
+  text-align: center;
+  font-size: 2.7rem;
+  color: var(--herocolr);
+}
+
+.main p {
+  font-weight: 600;
+  text-align: center;
+  margin: auto;
+  width: 80%;
+  color: var(--herocolr);
+  font-size: 1.5rem;
+  margin-block: 15px;
+}
+
+.btn {
+  margin: auto;
+  text-align: center;
+}
+
+.btn1 {
+  color: var(--herobtn);
+  background: var(--herobtnbg);
+  border: none;
+}
+
+@media (max-width: 500px) {
+  .main {
+    width: 97%;
+  }
+}
+
+/* latest review part css */
+.ltstrev {
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+.anim {
+  transition: transform 0.3s ease-in-out;
+}
+.anim:hover {
+  transform: translateY(-5px);
+}
+.stlrev {
+  background: var(--revrecentbg) !important;
+  color: var(--revrecentclr);
+}
+.stlrevone {
+  color: var(--revrecentclr) !important;
+}

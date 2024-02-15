@@ -1,0 +1,11 @@
+.bgmd {
+  background-color: var(--modalbg);
+  color: var(--mdlclr);
+}
+.bgmdclose {
+  color: var(--mdlclr);
+  cursor: pointer;
+}
+.desc {
+  font-size: 17px;
+}
