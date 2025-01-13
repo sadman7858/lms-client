@@ -1,35 +1,53 @@
-.main {
-    padding-block: 5rem;
-    margin: auto;
-    width: 80%;
+.container {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 5rem 2rem;
+    margin: 2.2rem 0;
 }
 
-.org {
-    background-color: var(--tcabg);
-    margin-block: 2.2rem;
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    color: #ffffff;
 }
 
-.main h1 {
+.title {
+    font-size: 3rem;
     font-weight: 900;
-    text-align: center;
-    font-size: 2.7rem;
-    color: var(--herocolr);
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.main p {
-    font-weight: 600;
-    text-align: center;
-    margin: auto;
-    width: 80%;
-    color: var(--herocolr);
-    font-size: 1.5rem;
-    margin-block: 15px;
+.description {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin: 0 auto;
+    max-width: 80%;
+    line-height: 1.6;
 }
 
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+    }
 
+    .description {
+        font-size: 1.125rem;
+    }
+}
 
-@media(max-width:500px) {
-    .main {
-        width: 97%;
+@media (max-width: 480px) {
+    .container {
+        padding: 3rem 1rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+        max-width: 100%;
     }
 }

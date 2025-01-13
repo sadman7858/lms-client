@@ -1,57 +1,56 @@
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { useState, useEffect } from 'react';
-import Card from 'react-bootstrap/Card';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-import style from './heropart.module.css';
+import styles from '../pages/latestreview.module.css';
+
 function LatestReview() {
   const [books, setBooks] = useState([]);
 
   useEffect(() => {
-    axios
-      .get('http://localhost:4000/studentauth/latestReview')
-      .then((res) => {
-        setBooks(res.data.data);
-      })
-      .catch((err) => console.log(err.message));
-  }, [books]);
+    const fetchLatestReviews = async () => {
+      try {
+        const response = await axios.get(
+          'http://localhost:4000/studentauth/latestReview'
+        );
+        setBooks(response.data.data);
+      } catch (error) {
+        console.error('Error fetching latest reviews:', error.message);
+      }
+    };
+
+    fetchLatestReviews();
+  }, []);
 
   return (
-    <div className={`container p-3 `}>
-      <h1 className={`text-center mb-4 fw-bold ${style.stlrevone}`}>
-        Latest Reviews
-      </h1>
-      <Row xs={1} md={2} lg={3} className='g-4'>
-        {books.map((book, i) => (
-          <Col key={i}>
-            <Card
-              className={`  ${style.anim} ${style.stlrev} ${style.stlrevone} h-100`}
-            >
-              <Card.Body>
-                <Card.Title>{book.btitle}</Card.Title>
-                <div className='d-flex border-bottom justify-content-between mb-3'>
-                  <p className='fw-bold'>Author:</p>
-                  <p>{book.bauthor}</p>
+    <div className={styles.container}>
+      <h1 className={styles.title}>Latest Reviews</h1>
+      {books.length > 0 ? (
+        <div className={styles.grid}>
+          {books.map((book, index) => (
+            <div key={index} className={styles.card}>
+              <div className={styles.cardBody}>
+                <h2 className={styles.cardTitle}>{book.btitle}</h2>
+                <div className={styles.cardInfo}>
+                  <span className={styles.cardLabel}>Author:</span>
+                  <span className={styles.cardValue}>{book.bauthor}</span>
                 </div>
-                <div className='d-flex border-bottom justify-content-between mb-3'>
-                  <p className='fw-bold'>Current Review:</p>
-                  <p>{book.breview}</p>
+                <div className={styles.cardInfo}>
+                  <span className={styles.cardLabel}>Current Review:</span>
+                  <span className={styles.cardValue}>{book.breview}</span>
                 </div>
-                <div className='d-flex justify-content-between'>
-                  <div className='d-flex align-items-center'>
+                <div className={styles.userInfo}>
+                  <div className={styles.user}>
                     <img
-                      style={{ height: '50px', marginRight: '10px' }}
-                      className='rounded-circle'
+                      className={styles.userImage}
                       src={`http://localhost:4000/images/${book.upic}`}
-                      alt={book.user_name}
+                      alt={`${book.user_name}'s profile`}
                     />
-                    <p className='m-0'>{book.user_name}</p>
+                    <span className={styles.userName}>{book.user_name}</span>
                   </div>
-                  <div>
-                    <p className='m-0'>
+                  <div className={styles.dateTime}>
+                    <p className={styles.date}>
                       {new Date(book.brdate).toLocaleDateString()}
                     </p>
-                    <p className='m-0'>
+                    <p className={styles.time}>
                       {new Date(book.brdate).toLocaleTimeString([], {
                         hour: '2-digit',
                         minute: '2-digit',
@@ -59,11 +58,13 @@ function LatestReview() {
                     </p>
                   </div>
                 </div>
-              </Card.Body>
-            </Card>
-          </Col>
-        ))}
-      </Row>
+              </div>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <p className='text-center'>No reviews available</p>
+      )}
     </div>
   );
 }
