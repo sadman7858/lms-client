@@ -65,7 +65,7 @@ function BookDetails() {
               </div>
               <div className={style.actions}>
                 <Button onClick={handleBack} variant='outline-danger'>
-                  Back
+                  Go to Back testing
                 </Button>
               </div>
             </div>
