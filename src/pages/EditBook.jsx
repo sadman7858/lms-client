@@ -129,7 +129,7 @@ function EditBook() {
 
           <div className={style.btn}>
             <Button variant='outline-warning' type='submit'>
-              UPDATE BOOK
+              UPDATE THE BOOK
             </Button>
           </div>
         </form>
