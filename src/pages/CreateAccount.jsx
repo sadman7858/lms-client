@@ -147,7 +147,7 @@ function CreateAccount() {
             {isLoading ? 'Creating Account...' : 'Sign Up'}
           </button>
           <p>
-            Already have an account? <Link to='/login'>Login</Link>
+            Already you have an account? <Link to='/login'>Login</Link>
           </p>
         </form>
       </div>
