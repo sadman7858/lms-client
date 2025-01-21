@@ -1,6 +1,6 @@
 .container {
     padding: 2rem;
-    background-color: #f9fafb;
+    /* background-color: var(--herocolr); */
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
@@ -9,7 +9,7 @@
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
-    color: #333333;
+    color: var(--revrecentclr);
     margin-bottom: 2rem;
     text-transform: uppercase;
 }
@@ -18,7 +18,7 @@
     border: none;
     border-radius: 12px;
     overflow: hidden;
-    background: #ffffff;
+    background: var(--stdnthomebg);
     box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
@@ -28,20 +28,20 @@
     box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 24px;
 }
 
-.card-title {
+.cardTitle {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #4a5568;
+    color: var(--revrecentclr);
     margin-bottom: 1rem;
 }
 
-.card-description {
+.cardDescription {
     font-size: 1rem;
-    color: #718096;
+    color: var(--revrecentclr);
     margin-bottom: 1rem;
 }
 
-.card-footer {
+.cardFooter {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -82,7 +82,7 @@
 .guest {
     font-size: 0.9rem;
     font-weight: 600;
-    color: #4a5568;
+    color: var(--revrecentclr);
 }
 
 @media (max-width: 768px) {

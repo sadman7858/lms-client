@@ -1,4 +1,4 @@
-.card:hover > h6 {
+.card:hover>h6 {
   font-size: 1.01rem;
 }
 
@@ -50,12 +50,12 @@
 .title {
   font-size: 18px;
   font-weight: bold;
-  color: #333;
+  /* color:var(); */
   margin-bottom: 10px;
 }
 
 .detail {
   font-size: 14px;
-  color: #555;
+  /* color: #555; */
   margin-bottom: 5px;
 }
