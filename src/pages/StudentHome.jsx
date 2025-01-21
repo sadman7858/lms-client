@@ -140,7 +140,7 @@ function StudentHome() {
                       variant='info'
                       className={style.btn}
                     >
-                      Request
+                      Request for book
                     </Button>
                   )}
 

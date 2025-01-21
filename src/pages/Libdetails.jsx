@@ -59,7 +59,7 @@ function Libdetails() {
       </p>
       <p className={`fs-5 ${style.txtclr}`}>
         6. Moreover, by harnessing technology to its fullest potential, the CSE
-        Library aligns itself with Sheikh Hasina University's commitment to
+        Library aligns itself with University of Netrokona's commitment to
         digitalization and academic advancement. The convergence of academia and
         technology within this space serves as a testament to the institution's
         dedication to staying at the forefront of educational evolution,
@@ -67,7 +67,7 @@ function Libdetails() {
         digital age.
       </p>
       <p className={`fs-5 ${style.txtclr}`}>
-        7. In summary, Sheikh Hasina University's Computer Science Engineering
+        7. In summary, University of Netrokona's Computer Science Engineering
         Library stands as a testament to innovation and adaptability. Its
         inception, driven by the insight of CSE students, reflects a commitment
         to enhancing the academic experience by leveraging technology to
