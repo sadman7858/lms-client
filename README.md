@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Library Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+The **Library Management System** is a web-based application for managing the library of the Computer Science Engineering department. It allows users (students and teachers) to request, return, and search books, view book details, manage their profiles, and interact with library events. The librarian, as the admin, can manage books, approve/reject book requests, and perform various administrative tasks like adding events and users.
 
-In the project directory, you can run:
+### Key Features
 
-### `npm start`
+#### **Admin (Librarian) Features:**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Create, Update, Delete Books:** Manage library books.
+- **Manage User Profiles:** Update and block users as necessary.
+- **Create Events:** Add library-related events for users.
+- **Approve/Reject Book Requests:** Approve or reject book issue requests.
+- **Make New Admin:** Assign admin privileges to users.
+- **Book History:** View detailed book history and transactions.
+- **Feedback & Reviews:** View and manage user feedback and reviews.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### **User (Student/Teacher) Features:**
 
-### `npm test`
+- **Request/Return Books:** Request books or return borrowed ones.
+- **View Book Details:** Search and see book information.
+- **Profile Management:** View and update personal profile.
+- **View Requested Books:** Track and manage requested books.
+- **Cancel Book Request:** Cancel a book request if needed.
+- **View History:** See book issue history.
+- **Add Feedback & Reviews:** Provide feedback and review books.
+- **Attend Events:** Participate in library events.
+- **Search and Filter Books:** Search books by name, semester, and filter based on availability.
+- **Read PDFs:** Open and read books in PDF format directly within the application.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Frontend:** React, Bootstrap, React Router, React Hook Form, React Toastify
+- **Backend:** Node.js, Express.js, MySQL, JWT Authentication, Nodemailer
+- **PDF Viewer:** React PDF Viewer, PDF.js
+- **Authentication:** JWT (JSON Web Tokens), Bcrypt for password hashing
+- **Others:** Axios, Moment.js, Multer (for file uploads), React Bootstrap, Chart.js, Recharts
